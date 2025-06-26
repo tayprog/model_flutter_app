@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
 
+// Página modelo do tipo Stateful
+// Use como modelo para criar novas páginas Stateful no aplicativo
+
 class StatefulModelPage extends StatefulWidget {
   const StatefulModelPage({super.key});
 
