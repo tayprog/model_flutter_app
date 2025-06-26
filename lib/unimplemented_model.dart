@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
-// Página vazia (Não implementada),
-// usada apenas para "demarcar" páginas futuras.
+// Página vazia (Não implementada)
+// Usada para "demarcar" páginas futuras.
+
 class TestPage extends StatelessWidget {
   const TestPage({super.key});
 
