@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+
+// Importa as páginas do aplicaivo
 import 'stateless_model_1.0.dart';
 import 'stateful_model_1.0.dart';
+import 'unimplemented_model.dart';
 
 void main() {
   runApp(const MyApp());
@@ -21,9 +24,17 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
 
       routes: {
-        '/': (context) => const HomePage(),
-        '/stateless_model': (context) => const StatelessModelPage(),
-        '/stateful_model': (context) => const StatefulModelPage(),
+        // Página inicial
+        '/': (context) => const HomePage(), 
+
+        // Página não implementada
+        '/test': (context) => const TestPage(), 
+
+        // Página stateless
+        '/stateless_model': (context) => const StatelessModelPage(), 
+
+        // Página stateful
+        '/stateful_model': (context) => const StatefulModelPage(), 
       },
     );
   }
@@ -95,7 +106,3 @@ class HomePage extends StatelessWidget {
     );
   }
 }
-
-// ------------------------- MODELOS DE PÁGINAS ----------------------------- //
-
-
